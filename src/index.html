@@ -29,7 +29,7 @@
             <button class="border-2 border-blue-800 py-2 px-4 rounded-2xl font-semibold">Imperial</button>
         </div>
 
-        <div class="flex flex-col items-center text-center w-4/5 my-10" data-id="metric">
+        <div data-id="metric" class="flex flex-col items-center text-center w-4/5 my-10" >
             <form>
                 <div>
                     <span class="block text-left font-semibold py-2">Meters to Feet</span>
@@ -54,27 +54,27 @@
             </form>
         </div>
 
-        <div class="flex flex-col items-center text-center w-4/5 my-10" data-id="imperial">
+        <div data-id="imperial" class="flex flex-col items-center text-center w-4/5 my-10 hidden" >
             <form>
                 <div>
-                    <span class="block text-left font-semibold py-2">Meters to Feet</span>
-                    <input readonly data-id="meter" placeholder="Meter" class="block py-2 px-4 my-2" />
+                    <span class="block text-left font-semibold py-2">Feet to Meters</span>
                     <input readonly data-id="feet" placeholder="Feet" class="block py-2 px-4 my-2" />
+                    <input readonly data-id="meter" placeholder="Meter" class="block py-2 px-4 my-2" />
                 </div>
                 <div>
-                    <span class="block text-left font-semibold py-2">Liter to Gallons</span>
-                    <input readonly data-id="liter" placeholder="Liter" class="block py-2 px-4 my-2" />
+                    <span class="block text-left font-semibold py-2">Gallons to Liters</span>
                     <input readonly data-id="gallon" placeholder="Gallon" class="block py-2 px-4 my-2" />
+                    <input readonly data-id="liter" placeholder="Liter" class="block py-2 px-4 my-2" />
                 </div>
                 <div>
-                    <span class="block text-left font-semibold py-2">Kilograms to Pounds</span>
-                    <input readonly data-id="kilogram" placeholder="Kilogram" class="block py-2 px-4 my-2" />
+                    <span class="block text-left font-semibold py-2">Pounds to Kilograms</span>
                     <input readonly data-id="pound" placeholder="Pounds" class="block py-2 px-4 my-2" />
+                    <input readonly data-id="kilogram" placeholder="Kilogram" class="block py-2 px-4 my-2" />
                 </div>
                 <div>
-                    <span class="block text-left font-semibold py-2">Celsius to Fahrenheit</span>
-                    <input readonly data-id="celsius" placeholder="Celsius" class="block py-2 px-4 my-2" />
+                    <span class="block text-left font-semibold py-2">Fahrenheit to Celsius</span>
                     <input readonly data-id="fahrenheit" placeholder="Fahrenheit" class="block py-2 px-4 my-2" />
+                    <input readonly data-id="celsius" placeholder="Celsius" class="block py-2 px-4 my-2" />
                 </div>
             </form>
         </div>

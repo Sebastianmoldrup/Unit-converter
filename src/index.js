@@ -1,6 +1,10 @@
 
 const form = document.querySelector('[data-id="form"]');
 const input = document.querySelector('[data-id="input"]');
+
+const metric = document.querySelector('[data-id="metric"]');
+const imperial = document.querySelector('[data-id="imperial"]');
+
 const meter = document.querySelector('[data-id="meter"]');
 const feet = document.querySelector('[data-id="feet"]');
 const liter = document.querySelector('[data-id="liter"]');
@@ -24,6 +28,9 @@ input.addEventListener('input', (e) => {
 
     celsius.value = "Celsius:" + " " + input.value;
     fahrenheit.value = "Fahrenheit:" + " " + Math.round( input.value * 1.8 + 32 );
-
 });
+
+function unitSwitch() {
+    if(imperial.classList.contains('hidden')) imperial.classList.remove('hidden') && metric.classList.add('hidden'); 
+}
 
